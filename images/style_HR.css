@@ -1,0 +1,253 @@
+/* v.2208.0801  */
+/* .container{
+			background-color: rgba(0, 0, 0, 0.2);} */
+
+.LANpromoteBN>a {
+    /* 檔期僅顯示第一張 */
+    display: none !important;
+}
+
+.LANpromoteBN>a:first-child {
+    /* 檔期僅顯示第一張 */
+    display: block !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #fffbf2;
+    /* background-image: url(HRPC.jpg); */
+    width: 100%;
+    background-size: cover;
+    background-position: center top;
+    /* background-attachment: fixed; */
+    background-repeat: repeat;
+}
+
+
+.safeText2101 {
+    color: #000;
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: futurastdmedium, noto sans tc, Arial, 微軟正黑體, microsoft jhenghei, sans-serif;
+}
+
+.row {
+    /*fixed flexbox stretch images*/
+    align-items: center !important;
+}
+
+.HRtransformScale {
+    transform: scale(1);
+    transition-duration: .3s;
+}
+
+.HRtransformScale:hover {
+    transform: scale(0.98);
+    cursor: pointer;
+}
+
+
+html {
+    /* user-select: none; */
+    color: #000;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+.lip {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel2102 {
+    margin-top: -42%;
+}
+
+.Area_HRnavbar {
+    background: #000;
+}
+
+.HRnavbar a {
+    background: #000;
+    color: rgb(252, 243, 222);
+    transition-duration: .3s;
+    font-family: futurastdmedium, noto sans tc, Arial, 微軟正黑體, microsoft jhenghei, sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 1.4em;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: 3px;
+    border-right: #fcf3de33 .5px solid;
+
+}
+
+.HRnavbar a:last-child {
+    border-right: #fcf3de33 0px solid;
+}
+
+/* 選單hover動態 */
+.HRnavbar:hover a {
+    opacity: .7;
+}
+
+.HRnavbar a:hover {
+    /* background: #333; */
+    color: rgb(252, 243, 222);
+    opacity: 1;
+    background: #161616;
+
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+        /* background-image: url(HRBGm.jpg); */
+        background-attachment: scroll;
+        background-size: 100%;
+
+    }
+
+    .bonusAnm2102:hover {
+        /* 滿額贈hover動態  */
+        transform: none;
+        filter: none;
+    }
+
+    .Area_HRnavbar {
+        margin-bottom: 0 !important;
+        /* justify-content: flex-start !important; */
+    }
+
+    .Area_HRnavbar .Area_HRnavbar_box {
+        display: inline-flex;
+        width: auto;
+        max-width: inherit;
+        overflow-y: hidden;
+        overflow-x: auto;
+        justify-content: flex-start !important;
+        -webkit-overflow-scrolling: touch;
+        -moz-overflow-scrolling: touch;
+        -ms-overflow-scrolling: touch;
+        -o-overflow-scrolling: touch;
+        padding-bottom: 0.5em;
+    }
+
+    .HRnavbar {
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .HRnavbar a {
+        background: #2e2e2e;
+        color: #fcf3de;
+        opacity: 1;
+        white-space: nowrap;
+        padding: 0.5em 0.8em;
+        border-right: none;
+        margin-right: 0.5em;
+    }
+
+    .HRnavbar a:last-child {
+        margin-right: 0;
+    }
+
+    .carousel2102 {
+        margin-top: -55%;
+    }
+}
+
+
+
+#HRScrolltoTopBtn {
+    width: 60px;
+    position: fixed;
+    right: 1%;
+    bottom: 3%;
+    height: auto;
+    opacity: 0;
+    transition-duration: .3s;
+    z-index: 99;
+}
+
+#HRScrolltoTopBtn:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+/* Swiper樣式區域 */
+.swiper-wrapper {
+    padding-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .swiper-pagination {
+        bottom: 5%;
+    }
+}
+
+.HRBOMCarousel {
+    --swiper-theme-color: #b3a480;
+    --swiper-navigation-color: #b3a480;
+    --swiper-navigation-size: 30px;
+    position: relative;
+    overflow: visible;
+    margin-top: -70%;
+    padding-bottom: 8%;
+}
+
+.HRBOMCarousel .swiper-pagination {
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    bottom: 0%;
+    /* --swiper-pagination-color: #cf0000; */
+}
+
+.HRBOMCarousel .swiper-slide {
+    transform: scale(.8);
+    transition: ease-in-out;
+    transition-duration: .3s;
+    opacity: 0;
+}
+
+.HRBOMCarousel .swiper-slide-active {
+    transform: scale(1.1);
+
+    opacity: 1;
+    transition: ease-in-out;
+    transition-duration: .3s;
+}
+
+.HRBOMCarousel .swiper-slide-prev,
+.HRBOMCarousel .swiper-slide-next {
+    padding: 0;
+    opacity: 1;
+    transition: ease-in-out;
+    transition-duration: .3s;
+}
+
+@media screen and (max-width: 768px) {
+
+    .HRMBOverflow {
+        width: 200%;
+        margin-left: -50%;
+    }
+
+    .HRMBOverflow .HRBOMCarousel {
+        margin-top: -70%;
+        padding-bottom: 30%;
+    }
+}
+
+
+/* .swiper-container-3d .swiper-slide {
+    transform: n;
+}.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right {
+    background-image: none;
+} */
